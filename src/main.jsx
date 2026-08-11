@@ -77,9 +77,9 @@ const assignments = [
   { id:"ai", title:"PEAS Representation", subject:"Artificial Intelligence", type:"AI Practical", description:"Intelligent-agent analysis using the PEAS framework.", image:"/assignments/assign1.jpg", tags:["AI","Python"] },
   { id:"dbms", title:"DBMS ER Diagram", subject:"Database Management Systems", type:"DBMS Assignment", description:"Database entities, relationships and schema design.", image:"/assignments/assign2.jpg", tags:["DBMS","SQL"] },
   { id:"os", title:"OS Process States", subject:"Operating System", type:"OS Assignment", description:"Process lifecycle and state-transition analysis.", image:"/assignments/assign3.jpg", tags:["OS","CN"] },
-  { id:"cloud", title:"Cloud VM Setup", subject:"Cloud Computing", type:"Cloud Practical", description:"Linux VM setup, permissions and AWS fundamentals.", image:"/assignments/assign4.jpg", tags:["AWS","Linux"] }
-  { id:"ewem-pledge", title:"EWEM-Pledge", subject:"Environmental & Waste/Energy Management", type:"EWEM Assignment", description:"My commitment to a sustainable future, focused on responsible technology use, waste reduction, e-waste responsibility and sustainable practices.", image:"/assignments/ewem-pledge.jpeg", tags:["EWEM","Sustainability"] }
-  ,{ id:"ewem-crossword", title:"EWEM-Crossword", subject:"Environmental & Waste/Energy Management", type:"EWEM Activity", description:"An E-Waste Mastermind crossword activity covering e-waste, recycling, environmental impacts and responsible electronic waste management.", image:"/assignments/ewem-crossword.jpeg", tags:["EWEM","E-Waste","Sustainability"] }
+  { id:"cloud", title:"Cloud VM Setup", subject:"Cloud Computing", type:"Cloud Practical", description:"Linux VM setup, permissions and AWS fundamentals.", image:"/assignments/assign4.jpg", tags:["AWS","Linux"] },
+  { id:"ewem-pledge", title:"EWEM-Pledge", subject:"Environmental & Waste/Energy Management", type:"EWEM Assignment", description:"My commitment to a sustainable future, focused on responsible technology use, waste reduction, e-waste responsibility and sustainable practices.", image:"/assignments/ewem-pledge.jpeg", tags:["EWEM","Sustainability"] },
+  { id:"ewem-crossword", title:"EWEM-Crossword", subject:"Environmental & Waste/Energy Management", type:"EWEM Activity", description:"An E-Waste Mastermind crossword activity covering e-waste, recycling, environmental impacts and responsible electronic waste management.", image:"/assignments/ewem-crossword.jpeg", tags:["EWEM","E-Waste","Sustainability"] },
 ];
 
 const work = [
