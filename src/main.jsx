@@ -78,6 +78,8 @@ const assignments = [
   { id:"dbms", title:"DBMS ER Diagram", subject:"Database Management Systems", type:"DBMS Assignment", description:"Database entities, relationships and schema design.", image:"/assignments/assign2.jpg", tags:["DBMS","SQL"] },
   { id:"os", title:"OS Process States", subject:"Operating System", type:"OS Assignment", description:"Process lifecycle and state-transition analysis.", image:"/assignments/assign3.jpg", tags:["OS","CN"] },
   { id:"cloud", title:"Cloud VM Setup", subject:"Cloud Computing", type:"Cloud Practical", description:"Linux VM setup, permissions and AWS fundamentals.", image:"/assignments/assign4.jpg", tags:["AWS","Linux"] }
+  { id:"ewem-pledge", title:"EWEM-Pledge", subject:"Environmental & Waste/Energy Management", type:"EWEM Assignment", description:"My commitment to a sustainable future, focused on responsible technology use, waste reduction, e-waste responsibility and sustainable practices.", image:"/assignments/ewem-pledge.jpeg", tags:["EWEM","Sustainability"] }
+  ,{ id:"ewem-crossword", title:"EWEM-Crossword", subject:"Environmental & Waste/Energy Management", type:"EWEM Activity", description:"An E-Waste Mastermind crossword activity covering e-waste, recycling, environmental impacts and responsible electronic waste management.", image:"/assignments/ewem-crossword.jpeg", tags:["EWEM","E-Waste","Sustainability"] }
 ];
 
 const work = [
@@ -251,7 +253,7 @@ function Assignments({onOpen}){
   const [filter,setFilter]=useState("All");
   const [search,setSearch]=useState("");
   const filtered=assignments.filter(a=>{
-    const matchesFilter=filter==="All" || a.tags.includes(filter) || a.subject.toLowerCase().includes(filter.toLowerCase());
+    const matchesFilter=filter==="All" || a.tags.includes(filter) || a.subject.toLowerCase().includes(filter.toLowerCase()) || (filter==="Other" && (a.tags.includes("EWEM") || a.tags.includes("Sustainability")));
     const q=search.toLowerCase().trim();
     return matchesFilter && (!q || `${a.title} ${a.subject} ${a.type} ${a.description} ${a.tags.join(" ")}`.toLowerCase().includes(q));
   });
